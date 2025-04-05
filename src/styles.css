@@ -20,6 +20,8 @@ body{
     font-size: 20px;
 }
 
+
+
 section{
     color: #fefae0;
 }
@@ -35,14 +37,18 @@ h1{
     animation: animate 10s linear infinite;
 }
 
-h2{
-    color:#bdb58e;
-    font-size: 40px;
+@keyframes animate{
+    to{
+        background-position-x: -200px;
+    }
+    
+
+}
+.protect{
+    color:#2F4F2F;
+    font-size: 26px;
     text-align: center;
-    text-shadow: #bdb58e 0px 0px 1.5px;
-    
-    
-    
+    text-decoration: underline;
 }
 
 
@@ -75,21 +81,23 @@ button{
     text-align: center;
     font-weight: 300px;
     font-family:"Montserrat", sans-serif;
-
+    transition: 0.5s ease;
+    border: 2px solid #c6bfa0;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 button:hover{
-    text-decoration: underline;;
-    text-shadow: #bdbbae 0px 0px 2px;
+    text-decoration: underline;
 }
 
 nav a{
-    font-size: 16px;
+    font-size: 24px;
     margin: auto;
     margin-left: 24px;
     margin-right: 24px;
     color: #b8b5a2; /*color of nav bar*/
-    font-weight: 500;
+
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 
@@ -143,7 +151,87 @@ nav a:active{
       border-color: transparent
     }
   }
+.sage-greeting{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 20px;
+    color: #2F4F2F;
+    height: 25vh;
+    text-align: center;
+    text-decoration: underline;
 
+}
+
+.text-box{
+    padding: 10px;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #2F4F2F;
+    border-radius: 12px;
+    width: fit-content;
+    gap: 10px; /* Adjust width to content */
+  }
+
+
+
+
+.text-input{
+    padding: 8px;
+    border: 4px solid #ddd;}
+
+
+input{
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+
+.input-button{
+    border: none;
+    background-color: transparent;
+    transition: 0.5s ease;
+    font-size: 20px;
+    text-align: center;
+    color: #c6bfa0;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+.button-container{
+    margin-top: 10px;
+}
+
+/*
+width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+    
+    */
 footer{
     color: #3c5f3c;
     text-shadow: #9d9a88 0px 0px 2px;
