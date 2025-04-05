@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Gidole&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;  
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+
+}
+
+body{
+    font-family:"Montserrat", sans-serif;
+    background-image: url(fish.jpg);
+    text-align: center;
+    font-size: 20px;
+}
+
+section{
+    color: #fefae0;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    margin: 35px auto;
+    padding: 20px;
+    background: #dda15e;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
