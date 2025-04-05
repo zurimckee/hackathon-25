@@ -9,6 +9,7 @@
 
 }
 
+
 body{
     font-family:"Montserrat", sans-serif;
     background-image: url(Hills.jpg);
@@ -35,17 +36,25 @@ h1{
 }
 
 h2{
-    color:#c6bfa0;
+    color:#bdb58e;
     font-size: 40px;
     text-align: center;
+    text-shadow: #bdb58e 0px 0px 1.5px;
+    
+    
     
 }
-@keyframes animate{
-    to{
-        background-position-x: -200px;
-    }
-}
 
+
+main{
+    display:list-item;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*full height of the viewport*/;
+    flex-direction: column;
+    gap: 10px;
+
+}
 .card{
     width: 450px;
     height: auto;
@@ -70,8 +79,8 @@ button{
 }
 
 button:hover{
-    color: #9d9a88;
-    font-weight: 200px;
+    text-decoration: underline;;
+    text-shadow: #bdbbae 0px 0px 2px;
 }
 
 nav a{
@@ -101,7 +110,7 @@ nav ul li{
 
 nav a:hover{
     color: #bdbbae;
-    border-bottom: 3px solid  #d6d2bb;
+    border-bottom: 3px solid  #bdbbae;
 }
 nav a:active{
     color:#aba588; 
@@ -112,11 +121,12 @@ nav a:active{
     /*This part is important for centering*/
     display: grid;
     place-items: center;
+    position: sticky;
   }
   
   .typing-demo {
-    width: 33ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    width: 36ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -135,12 +145,10 @@ nav a:active{
   }
 
 footer{
-    color: #fefae0;
+    color: #3c5f3c;
+    text-shadow: #9d9a88 0px 0px 2px;
     position: absolute;
     bottom: 0;
     text-align: center;
-    border-radius: 12px;
-    border-color: #fefae0;
-    border-width: 2px;
 
 }
